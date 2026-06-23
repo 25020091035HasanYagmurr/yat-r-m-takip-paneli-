@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayarlar — Rain Yatırım</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a href="tasarim1.html" class="logo">
+        <div class="logo-icon">₺</div>
+        <div class="logo-text">
+          <h1>Rain Yatırım</h1>
+          <p>Yatırım Paneli</p>
+        </div>
+      </a>
+
+      <div class="menu-label">Ana Menü</div>
+      <ul class="menu">
+        <li><a href="tasarim1.html"><span class="menu-icon">📊</span> Dashboard</a></li>
+        <li><a href="portfoyum.html"><span class="menu-icon">💼</span> Portföyüm</a></li>
+        <li><a href="piyasalar.html"><span class="menu-icon">📈</span> Piyasalar</a></li>
+        <li><a href="islemler.html"><span class="menu-icon">💰</span> İşlemler</a></li>
+        <li><a href="raporlar.html"><span class="menu-icon">📋</span> Raporlar</a></li>
+      </ul>
+
+      <div class="menu-label" style="margin-top: 24px;">Araçlar</div>
+      <ul class="menu">
+        <li><a href="alarmlar.html"><span class="menu-icon">🔔</span> Alarmlar</a></li>
+        <li><a href="ayarlar.html" class="active"><span class="menu-icon">⚙️</span> Ayarlar</a></li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="user-card">
+          <div class="avatar">HR</div>
+          <div class="user-info">
+            <strong>Hasan Rain</strong>
+            <span>Premium Üye</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-left">
+          <h2>Ayarlar</h2>
+          <p>Hesap, bildirim ve görünüm tercihlerinizi yönetin</p>
+        </div>
+        <div class="topbar-actions">
+          <button class="btn btn-ghost">İptal</button>
+          <button class="btn btn-primary">Kaydet</button>
+        </div>
+      </div>
+
+      <section class="settings-grid">
+        <div class="chart-card">
+          <div class="card-header">
+            <h3>Profil Bilgileri</h3>
+          </div>
+          <div class="form-group">
+            <label for="name">Ad Soyad</label>
+            <input type="text" id="name" value="Hasan Rain" />
+          </div>
+          <div class="form-group">
+            <label for="email">E-posta</label>
+            <input type="email" id="email" value="hasan.rain@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" value="+90 532 000 00 00" />
+          </div>
+          <div class="form-group">
+            <label for="plan">Üyelik Planı</label>
+            <select id="plan">
+              <option selected>Premium</option>
+              <option>Standart</option>
+              <option>Kurumsal</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="card-header">
+            <h3>Para Birimi &amp; Bölge</h3>
+          </div>
+          <div class="form-group">
+            <label for="currency">Ana Para Birimi</label>
+            <select id="currency">
+              <option selected>Türk Lirası (₺)</option>
+              <option>Amerikan Doları ($)</option>
+              <option>Euro (€)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="timezone">Saat Dilimi</label>
+            <select id="timezone">
+              <option selected>Europe/Istanbul (UTC+3)</option>
+              <option>UTC</option>
+              <option>America/New_York</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="lang">Dil</label>
+            <select id="lang">
+              <option selected>Türkçe</option>
+              <option>English</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="card-header">
+            <h3>Bildirimler</h3>
+          </div>
+          <div class="toggle-row">
+            <div>
+              <strong style="font-size: 14px;">E-posta Bildirimleri</strong>
+              <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Alarm ve rapor bildirimleri</p>
+            </div>
+            <div class="toggle on"></div>
+          </div>
+          <div class="toggle-row">
+            <div>
+              <strong style="font-size: 14px;">Push Bildirimleri</strong>
+              <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Anlık fiyat uyarıları</p>
+            </div>
+            <div class="toggle on"></div>
+          </div>
+          <div class="toggle-row">
+            <div>
+              <strong style="font-size: 14px;">Haftalık Özet</strong>
+              <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Her Pazartesi portföy raporu</p>
+            </div>
+            <div class="toggle on"></div>
+          </div>
+          <div class="toggle-row">
+            <div>
+              <strong style="font-size: 14px;">Piyasa Haberleri</strong>
+              <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Günlük piyasa bülteni</p>
+            </div>
+            <div class="toggle"></div>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="card-header">
+            <h3>Güvenlik</h3>
+          </div>
+          <div class="form-group">
+            <label for="password">Yeni Şifre</label>
+            <input type="password" id="password" placeholder="••••••••" />
+          </div>
+          <div class="form-group">
+            <label for="password2">Şifre Tekrar</label>
+            <input type="password" id="password2" placeholder="••••••••" />
+          </div>
+          <div class="toggle-row">
+            <div>
+              <strong style="font-size: 14px;">İki Faktörlü Doğrulama</strong>
+              <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">SMS ile ek güvenlik</p>
+            </div>
+            <div class="toggle on"></div>
+          </div>
+          <button class="btn btn-ghost" style="margin-top: 8px; width: 100%;">Oturumu Sonlandır</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

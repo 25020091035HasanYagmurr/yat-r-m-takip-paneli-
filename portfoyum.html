@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portföyüm — Rain Yatırım</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .data-table { min-width: 960px; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a href="tasarim1.html" class="logo">
+        <div class="logo-icon">₺</div>
+        <div class="logo-text">
+          <h1>Rain Yatırım</h1>
+          <p>Yatırım Paneli</p>
+        </div>
+      </a>
+
+      <div class="menu-label">Ana Menü</div>
+      <ul class="menu">
+        <li><a href="tasarim1.html"><span class="menu-icon">📊</span> Dashboard</a></li>
+        <li><a href="portfoyum.html" class="active"><span class="menu-icon">💼</span> Portföyüm</a></li>
+        <li><a href="piyasalar.html"><span class="menu-icon">📈</span> Piyasalar</a></li>
+        <li><a href="islemler.html"><span class="menu-icon">💰</span> İşlemler</a></li>
+        <li><a href="raporlar.html"><span class="menu-icon">📋</span> Raporlar</a></li>
+      </ul>
+
+      <div class="menu-label" style="margin-top: 24px;">Araçlar</div>
+      <ul class="menu">
+        <li><a href="alarmlar.html"><span class="menu-icon">🔔</span> Alarmlar</a></li>
+        <li><a href="ayarlar.html"><span class="menu-icon">⚙️</span> Ayarlar</a></li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="user-card">
+          <div class="avatar">HR</div>
+          <div class="user-info">
+            <strong>Hasan Rain</strong>
+            <span>Premium Üye</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-left">
+          <h2>Portföyüm</h2>
+          <p>Tüm varlıklarınızın detaylı dökümü ve performansı</p>
+        </div>
+        <div class="topbar-actions">
+          <button class="btn btn-ghost">Dışa Aktar</button>
+          <button class="btn btn-primary">+ Yeni Varlık</button>
+        </div>
+      </div>
+
+      <!--
+        Fiyat referansları (Haziran 2026, gerçekçi aralıklar):
+        USD/TRY: 38,72 | BTC: ~$104.200 | ETH: ~$3.850
+        Gram altın: 4.285 TL/gr (2.900–5.400 aralığında)
+      -->
+      <section class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-label">Toplam Portföy</div>
+          <div class="stat-value">₺2.709.841</div>
+          <div class="stat-change positive">+8,6% bu ay</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Toplam Kâr/Zarar</div>
+          <div class="stat-value">₺469.391</div>
+          <div class="stat-change positive">+20,9% getiri</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Varlık Sayısı</div>
+          <div class="stat-value">6</div>
+          <div class="stat-change positive">5 farklı sınıf</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">En Büyük Pozisyon</div>
+          <div class="stat-value">Bitcoin</div>
+          <div class="stat-change positive">%62,5 pay</div>
+        </div>
+      </section>
+
+      <section class="chart-card">
+        <div class="card-header">
+          <div>
+            <h3>Varlık Detay Tablosu</h3>
+            <p class="card-header-meta">Son güncelleme: 23 Haziran 2026, 14:32 · USD/TRY: 38,72</p>
+          </div>
+          <div class="tabs">
+            <div class="tab active">Tümü</div>
+            <div class="tab">Kripto</div>
+            <div class="tab">Hisse</div>
+            <div class="tab">Döviz &amp; Emtia</div>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Varlık</th>
+                <th>Tür</th>
+                <th class="num">Miktar</th>
+                <th class="num">Birim Fiyat</th>
+                <th class="num">Maliyet</th>
+                <th class="num">Güncel Değer</th>
+                <th class="num">K/Z (₺)</th>
+                <th class="num">K/Z (%)</th>
+                <th class="num">Portföy %</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon btc">BTC</div>
+                    <div class="asset-name">
+                      <strong>Bitcoin</strong>
+                      <span>BTC / TRY</span>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge crypto">Kripto</span></td>
+                <td class="num">0,42 BTC</td>
+                <td class="num">₺4.034.624</td>
+                <td class="num">₺1.344.000</td>
+                <td class="num">₺1.694.542</td>
+                <td class="num pnl up">+₺350.542</td>
+                <td class="num pnl up">+26,1%</td>
+                <td class="num">
+                  <div class="alloc-bar">
+                    <span>62,5%</span>
+                    <div class="alloc-track"><div class="alloc-fill" style="width: 62.5%;"></div></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon eth">ETH</div>
+                    <div class="asset-name">
+                      <strong>Ethereum</strong>
+                      <span>ETH / TRY</span>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge crypto">Kripto</span></td>
+                <td class="num">3,8 ETH</td>
+                <td class="num">₺149.072</td>
+                <td class="num">₺475.000</td>
+                <td class="num">₺566.474</td>
+                <td class="num pnl up">+₺91.474</td>
+                <td class="num pnl up">+19,3%</td>
+                <td class="num">
+                  <div class="alloc-bar">
+                    <span>20,9%</span>
+                    <div class="alloc-track"><div class="alloc-fill" style="width: 20.9%;"></div></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon gold">ALT</div>
+                    <div class="asset-name">
+                      <strong>Gram Altın</strong>
+                      <span>995 ayar · fiziki</span>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge commodity">Emtia</span></td>
+                <td class="num">45 gr</td>
+                <td class="num">₺4.285 / gr</td>
+                <td class="num">₺176.400</td>
+                <td class="num">₺192.825</td>
+                <td class="num pnl up">+₺16.425</td>
+                <td class="num pnl up">+9,3%</td>
+                <td class="num">
+                  <div class="alloc-bar">
+                    <span>7,1%</span>
+                    <div class="alloc-track"><div class="alloc-fill" style="width: 7.1%;"></div></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon usd">USD</div>
+                    <div class="asset-name">
+                      <strong>Amerikan Doları</strong>
+                      <span>Nakit · vadesiz</span>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge fx">Döviz</span></td>
+                <td class="num">$2.500</td>
+                <td class="num">₺38,72</td>
+                <td class="num">₺91.250</td>
+                <td class="num">₺96.800</td>
+                <td class="num pnl up">+₺5.550</td>
+                <td class="num pnl up">+6,1%</td>
+                <td class="num">
+                  <div class="alloc-bar">
+                    <span>3,6%</span>
+                    <div class="alloc-track"><div class="alloc-fill" style="width: 3.6%;"></div></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon bist">THY</div>
+                    <div class="asset-name">
+                      <strong>Türk Hava Yolları</strong>
+                      <span>THYAO · BIST</span>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge stock">Hisse</span></td>
+                <td class="num">120 adet</td>
+                <td class="num">₺285,00</td>
+                <td class="num">₺28.800</td>
+                <td class="num">₺34.200</td>
+                <td class="num pnl up">+₺5.400</td>
+                <td class="num pnl up">+18,8%</td>
+                <td class="num">
+                  <div class="alloc-bar">
+                    <span>1,3%</span>
+                    <div class="alloc-track"><div class="alloc-fill" style="width: 1.3%;"></div></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon tl">TL</div>
+                    <div class="asset-name">
+                      <strong>Vadeli Mevduat</strong>
+                      <span>32 gün · %48,5 brüt</span>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge cash">Nakit</span></td>
+                <td class="num">₺125.000</td>
+                <td class="num">—</td>
+                <td class="num">₺125.000</td>
+                <td class="num">₺125.000</td>
+                <td class="num pnl up">+₺0</td>
+                <td class="num">0,0%</td>
+                <td class="num">
+                  <div class="alloc-bar">
+                    <span>4,6%</span>
+                    <div class="alloc-track"><div class="alloc-fill" style="width: 4.6%;"></div></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="summary-row">
+                <td colspan="4"><strong>Toplam</strong></td>
+                <td class="num">₺2.240.450</td>
+                <td class="num">₺2.709.841</td>
+                <td class="num pnl up">+₺469.391</td>
+                <td class="num pnl up">+20,9%</td>
+                <td class="num">100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-footer">
+          <p>Altın hesabı: <strong>45 gr × ₺4.285 = ₺192.825</strong> (gram fiyatı 2.900–5.400 TL bandında)</p>
+          <p>Maliyet toplamı ile güncel değer arasındaki fark: <strong class="pnl up">+₺469.391</strong></p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

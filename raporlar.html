@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raporlar — Rain Yatırım</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a href="tasarim1.html" class="logo">
+        <div class="logo-icon">₺</div>
+        <div class="logo-text">
+          <h1>Rain Yatırım</h1>
+          <p>Yatırım Paneli</p>
+        </div>
+      </a>
+
+      <div class="menu-label">Ana Menü</div>
+      <ul class="menu">
+        <li><a href="tasarim1.html"><span class="menu-icon">📊</span> Dashboard</a></li>
+        <li><a href="portfoyum.html"><span class="menu-icon">💼</span> Portföyüm</a></li>
+        <li><a href="piyasalar.html"><span class="menu-icon">📈</span> Piyasalar</a></li>
+        <li><a href="islemler.html"><span class="menu-icon">💰</span> İşlemler</a></li>
+        <li><a href="raporlar.html" class="active"><span class="menu-icon">📋</span> Raporlar</a></li>
+      </ul>
+
+      <div class="menu-label" style="margin-top: 24px;">Araçlar</div>
+      <ul class="menu">
+        <li><a href="alarmlar.html"><span class="menu-icon">🔔</span> Alarmlar</a></li>
+        <li><a href="ayarlar.html"><span class="menu-icon">⚙️</span> Ayarlar</a></li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="user-card">
+          <div class="avatar">HR</div>
+          <div class="user-info">
+            <strong>Hasan Rain</strong>
+            <span>Premium Üye</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-left">
+          <h2>Raporlar</h2>
+          <p>Portföy analizi ve dönemsel performans raporları</p>
+        </div>
+        <div class="topbar-actions">
+          <button class="btn btn-ghost">Tarih Seç</button>
+          <button class="btn btn-primary">Rapor Oluştur</button>
+        </div>
+      </div>
+
+      <section class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-label">Yıllık Getiri</div>
+          <div class="stat-value">+34,2%</div>
+          <div class="stat-change positive">2026 YTD</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">En İyi Varlık</div>
+          <div class="stat-value">Bitcoin</div>
+          <div class="stat-change positive">+26,1% K/Z</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Oluşturulan Rapor</div>
+          <div class="stat-value">8</div>
+          <div class="stat-change positive">Bu yıl</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Son Rapor</div>
+          <div class="stat-value">Haziran</div>
+          <div class="stat-change positive">2 gün önce</div>
+        </div>
+      </section>
+
+      <section class="chart-card" style="margin-bottom: 20px;">
+        <div class="card-header">
+          <h3>Hazır Raporlar</h3>
+        </div>
+        <div class="report-grid">
+          <div class="report-item">
+            <h4>📊 Aylık Portföy Özeti</h4>
+            <p>Varlık dağılımı, getiri oranı ve aylık K/Z dökümü. Haziran 2026.</p>
+            <button class="btn btn-ghost">PDF İndir</button>
+          </div>
+          <div class="report-item">
+            <h4>💰 Vergi Raporu</h4>
+            <p>Yıllık alım-satım özeti ve vergi beyanı için işlem listesi.</p>
+            <button class="btn btn-ghost">PDF İndir</button>
+          </div>
+          <div class="report-item">
+            <h4>📈 Performans Analizi</h4>
+            <p>Benchmark karşılaştırması: BIST 100 vs portföy getirisi.</p>
+            <button class="btn btn-ghost">PDF İndir</button>
+          </div>
+          <div class="report-item">
+            <h4>🔔 Alarm Geçmişi</h4>
+            <p>Tetiklenen fiyat alarmları ve piyasa uyarıları özeti.</p>
+            <button class="btn btn-ghost">PDF İndir</button>
+          </div>
+          <div class="report-item">
+            <h4>💼 Varlık Sınıfı Dağılımı</h4>
+            <p>Kripto, hisse, döviz ve emtia ağırlıkları grafiği.</p>
+            <button class="btn btn-ghost">PDF İndir</button>
+          </div>
+          <div class="report-item">
+            <h4>📋 İşlem Dökümü</h4>
+            <p>Seçilen dönemdeki tüm alım-satım işlemleri detaylı liste.</p>
+            <button class="btn btn-ghost">Excel İndir</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="chart-card">
+        <div class="card-header">
+          <div>
+            <h3>Son Oluşturulan Raporlar</h3>
+            <p class="card-header-meta">Hasan Rain · Rain Yatırım hesabı</p>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Rapor Adı</th>
+                <th>Dönem</th>
+                <th>Oluşturma</th>
+                <th>Format</th>
+                <th class="num">Boyut</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Aylık Portföy Özeti</strong></td>
+                <td>Haziran 2026</td>
+                <td>21 Haz 2026</td>
+                <td><span class="badge cash">PDF</span></td>
+                <td class="num">842 KB</td>
+                <td><button class="btn btn-ghost" style="padding: 7px 12px; font-size: 12px;">İndir</button></td>
+              </tr>
+              <tr>
+                <td><strong>İşlem Dökümü</strong></td>
+                <td>Mayıs 2026</td>
+                <td>01 Haz 2026</td>
+                <td><span class="badge stock">Excel</span></td>
+                <td class="num">124 KB</td>
+                <td><button class="btn btn-ghost" style="padding: 7px 12px; font-size: 12px;">İndir</button></td>
+              </tr>
+              <tr>
+                <td><strong>Performans Analizi</strong></td>
+                <td>Q1 2026</td>
+                <td>05 Nis 2026</td>
+                <td><span class="badge cash">PDF</span></td>
+                <td class="num">1,2 MB</td>
+                <td><button class="btn btn-ghost" style="padding: 7px 12px; font-size: 12px;">İndir</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alarmlar — Rain Yatırım</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a href="tasarim1.html" class="logo">
+        <div class="logo-icon">₺</div>
+        <div class="logo-text">
+          <h1>Rain Yatırım</h1>
+          <p>Yatırım Paneli</p>
+        </div>
+      </a>
+
+      <div class="menu-label">Ana Menü</div>
+      <ul class="menu">
+        <li><a href="tasarim1.html"><span class="menu-icon">📊</span> Dashboard</a></li>
+        <li><a href="portfoyum.html"><span class="menu-icon">💼</span> Portföyüm</a></li>
+        <li><a href="piyasalar.html"><span class="menu-icon">📈</span> Piyasalar</a></li>
+        <li><a href="islemler.html"><span class="menu-icon">💰</span> İşlemler</a></li>
+        <li><a href="raporlar.html"><span class="menu-icon">📋</span> Raporlar</a></li>
+      </ul>
+
+      <div class="menu-label" style="margin-top: 24px;">Araçlar</div>
+      <ul class="menu">
+        <li><a href="alarmlar.html" class="active"><span class="menu-icon">🔔</span> Alarmlar</a></li>
+        <li><a href="ayarlar.html"><span class="menu-icon">⚙️</span> Ayarlar</a></li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="user-card">
+          <div class="avatar">HR</div>
+          <div class="user-info">
+            <strong>Hasan Rain</strong>
+            <span>Premium Üye</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-left">
+          <h2>Alarmlar</h2>
+          <p>Fiyat hedeflerinize ulaşıldığında anında bildirim alın</p>
+        </div>
+        <div class="topbar-actions">
+          <button class="btn btn-ghost">Geçmiş</button>
+          <button class="btn btn-primary">+ Yeni Alarm</button>
+        </div>
+      </div>
+
+      <section class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-label">Aktif Alarm</div>
+          <div class="stat-value">5</div>
+          <div class="stat-change positive">İzleniyor</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Bugün Tetiklenen</div>
+          <div class="stat-value">2</div>
+          <div class="stat-change positive">BTC ve Altın</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Duraklatılmış</div>
+          <div class="stat-value">1</div>
+          <div class="stat-change negative">ETH alarmı</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Toplam Alarm</div>
+          <div class="stat-value">8</div>
+          <div class="stat-change positive">Tüm zamanlar</div>
+        </div>
+      </section>
+
+      <section class="chart-card">
+        <div class="card-header">
+          <div>
+            <h3>Fiyat Alarmları</h3>
+            <p class="card-header-meta">E-posta ve push bildirimleri açık</p>
+          </div>
+          <div class="tabs">
+            <div class="tab active">Aktif</div>
+            <div class="tab">Tetiklenen</div>
+            <div class="tab">Tümü</div>
+          </div>
+        </div>
+
+        <div class="alarm-list">
+          <div class="alarm-item">
+            <div class="alarm-status active"></div>
+            <div class="asset-cell" style="flex: 1;">
+              <div class="asset-icon btc">BTC</div>
+              <div class="asset-name">
+                <strong>Bitcoin ≥ ₺4.100.000</strong>
+                <span>Güncel: ₺4.034.624 · Yukarı yönlü</span>
+              </div>
+            </div>
+            <span class="badge crypto">Aktif</span>
+            <button class="btn btn-ghost" style="padding: 7px 12px; font-size: 12px;">Düzenle</button>
+          </div>
+
+          <div class="alarm-item">
+            <div class="alarm-status active"></div>
+            <div class="asset-cell" style="flex: 1;">
+              <div class="asset-icon gold">ALT</div>
+              <div class="asset-name">
+                <strong>Gram Altın ≥ ₺4.400</strong>
+                <span>Güncel: ₺4.285 · Yukarı yönlü</span>
+              </div>
+            </div>
+            <span class="badge commodity">Aktif</span>
+            <button class="btn btn-ghost" style="padding: 7px 12px; font-size: 12px;">Düzenle</button>
+          </div>
+
+          <div class="alarm-item">
+            <div class="alarm-status active"></div>
+            <div class="asset-cell" style="flex: 1;">
+              <div class="asset-icon usd">USD</div>
+              <div class="asset-name">
+                <strong>USD/TRY ≤ ₺38,00</strong>
+                <span>Güncel: ₺38,72 · Aşağı yönlü</span>
+              </div>
+            </div>
+            <span class="badge fx">Aktif</span>
+            <button class="btn btn-ghost" style="padding: 7px 12px; font-size: 12px;">Düzenle</button>
+          </div>
+
+          <div class="alarm-item">
+            <div class="alarm-status active"></div>
+            <div class="asset-cell" style="flex: 1;">
+              <div class="asset-icon bist">THY</div>
+              <div class="asset-name">
+                <strong>THYAO ≥ ₺300</strong>
+                <span>Güncel: ₺285,00 · Yukarı yönlü</span>
+              </div>
+            </div>
+            <span class="badge stock">Aktif</span>
+            <button class="btn btn-ghost" style="padding: 7px 12px; font-size: 12px;">Düzenle</button>
+          </div>
+
+          <div class="alarm-item">
+            <div class="alarm-status active"></div>
+            <div class="asset-cell" style="flex: 1;">
+              <div class="asset-icon bist">100</div>
+              <div class="asset-name">
+                <strong>BIST 100 ≥ 11.000</strong>
+                <span>Güncel: 10.842 · Yukarı yönlü</span>
+              </div>
+            </div>
+            <span class="badge stock">Aktif</span>
+            <button class="btn btn-ghost" style="padding: 7px 12px; font-size: 12px;">Düzenle</button>
+          </div>
+
+          <div class="alarm-item">
+            <div class="alarm-status paused"></div>
+            <div class="asset-cell" style="flex: 1;">
+              <div class="asset-icon eth">ETH</div>
+              <div class="asset-name">
+                <strong>Ethereum ≤ ₺140.000</strong>
+                <span>Güncel: ₺149.072 · Duraklatıldı</span>
+              </div>
+            </div>
+            <span class="badge cash">Duraklatıldı</span>
+            <button class="btn btn-ghost" style="padding: 7px 12px; font-size: 12px;">Etkinleştir</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

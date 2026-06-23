@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — Rain Yatırım</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a href="tasarim1.html" class="logo">
+        <div class="logo-icon">₺</div>
+        <div class="logo-text">
+          <h1>Rain Yatırım</h1>
+          <p>Yatırım Paneli</p>
+        </div>
+      </a>
+
+      <div class="menu-label">Ana Menü</div>
+      <ul class="menu">
+        <li><a href="tasarim1.html" class="active"><span class="menu-icon">📊</span> Dashboard</a></li>
+        <li><a href="portfoyum.html"><span class="menu-icon">💼</span> Portföyüm</a></li>
+        <li><a href="piyasalar.html"><span class="menu-icon">📈</span> Piyasalar</a></li>
+        <li><a href="islemler.html"><span class="menu-icon">💰</span> İşlemler</a></li>
+        <li><a href="raporlar.html"><span class="menu-icon">📋</span> Raporlar</a></li>
+      </ul>
+
+      <div class="menu-label" style="margin-top: 24px;">Araçlar</div>
+      <ul class="menu">
+        <li><a href="alarmlar.html"><span class="menu-icon">🔔</span> Alarmlar</a></li>
+        <li><a href="ayarlar.html"><span class="menu-icon">⚙️</span> Ayarlar</a></li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="user-card">
+          <div class="avatar">HR</div>
+          <div class="user-info">
+            <strong>Hasan Rain</strong>
+            <span>Premium Üye</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-left">
+          <h2>Yatırım Özeti</h2>
+          <p>Portföy performansınızı anlık takip edin</p>
+        </div>
+        <div class="topbar-actions">
+          <button class="btn btn-ghost">Filtrele</button>
+          <button class="btn btn-primary">+ Yeni İşlem</button>
+        </div>
+      </div>
+
+      <section class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-label">Toplam Portföy</div>
+          <div class="stat-value">₺2.709.841</div>
+          <div class="stat-change positive">+8,6% bu ay</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Günlük Kazanç</div>
+          <div class="stat-value">₺48.777</div>
+          <div class="stat-change positive">+1,8%</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Aktif Yatırım</div>
+          <div class="stat-value">6</div>
+          <div class="stat-change positive">5 farklı sınıf</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Risk Skoru</div>
+          <div class="stat-value">Orta</div>
+          <div class="stat-change negative">-0,3 puan</div>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <div class="chart-card">
+          <div class="card-header">
+            <h3>Portföy Performansı</h3>
+            <div class="tabs">
+              <div class="tab">1G</div>
+              <div class="tab">1H</div>
+              <div class="tab active">1A</div>
+              <div class="tab">1Y</div>
+            </div>
+          </div>
+          <div class="chart-area">
+            <div class="chart-line">
+              <svg viewBox="0 0 800 260" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#22d3ee" />
+                    <stop offset="100%" stop-color="#6366f1" />
+                  </linearGradient>
+                  <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="rgba(34, 211, 238, 0.25)" />
+                    <stop offset="100%" stop-color="rgba(34, 211, 238, 0)" />
+                  </linearGradient>
+                </defs>
+                <path class="area" d="M0,180 L80,160 L160,170 L240,130 L320,140 L400,90 L480,110 L560,70 L640,85 L720,45 L800,60 L800,260 L0,260 Z" />
+                <path d="M0,180 L80,160 L160,170 L240,130 L320,140 L400,90 L480,110 L560,70 L640,85 L720,45 L800,60" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="card-header">
+            <h3>Varlıklarım</h3>
+          </div>
+          <div class="portfolio-list">
+            <div class="portfolio-item">
+              <div class="asset">
+                <div class="asset-icon btc">BTC</div>
+                <div class="asset-info">
+                  <strong>Bitcoin</strong>
+                  <span>0,42 BTC</span>
+                </div>
+              </div>
+              <div class="asset-value">
+                <strong>₺1.694.542</strong>
+                <span class="up">+5,2%</span>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="asset">
+                <div class="asset-icon eth">ETH</div>
+                <div class="asset-info">
+                  <strong>Ethereum</strong>
+                  <span>3,8 ETH</span>
+                </div>
+              </div>
+              <div class="asset-value">
+                <strong>₺566.474</strong>
+                <span class="up">+3,8%</span>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="asset">
+                <div class="asset-icon usd">USD</div>
+                <div class="asset-info">
+                  <strong>Dolar</strong>
+                  <span>$2.500</span>
+                </div>
+              </div>
+              <div class="asset-value">
+                <strong>₺96.800</strong>
+                <span class="down">-0,4%</span>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="asset">
+                <div class="asset-icon gold">ALT</div>
+                <div class="asset-info">
+                  <strong>Altın</strong>
+                  <span>45 gr · ₺4.285/gr</span>
+                </div>
+              </div>
+              <div class="asset-value">
+                <strong>₺192.825</strong>
+                <span class="up">+1,9%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

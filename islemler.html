@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İşlemler — Rain Yatırım</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a href="tasarim1.html" class="logo">
+        <div class="logo-icon">₺</div>
+        <div class="logo-text">
+          <h1>Rain Yatırım</h1>
+          <p>Yatırım Paneli</p>
+        </div>
+      </a>
+
+      <div class="menu-label">Ana Menü</div>
+      <ul class="menu">
+        <li><a href="tasarim1.html"><span class="menu-icon">📊</span> Dashboard</a></li>
+        <li><a href="portfoyum.html"><span class="menu-icon">💼</span> Portföyüm</a></li>
+        <li><a href="piyasalar.html"><span class="menu-icon">📈</span> Piyasalar</a></li>
+        <li><a href="islemler.html" class="active"><span class="menu-icon">💰</span> İşlemler</a></li>
+        <li><a href="raporlar.html"><span class="menu-icon">📋</span> Raporlar</a></li>
+      </ul>
+
+      <div class="menu-label" style="margin-top: 24px;">Araçlar</div>
+      <ul class="menu">
+        <li><a href="alarmlar.html"><span class="menu-icon">🔔</span> Alarmlar</a></li>
+        <li><a href="ayarlar.html"><span class="menu-icon">⚙️</span> Ayarlar</a></li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="user-card">
+          <div class="avatar">HR</div>
+          <div class="user-info">
+            <strong>Hasan Rain</strong>
+            <span>Premium Üye</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar-left">
+          <h2>İşlemler</h2>
+          <p>Alım-satım geçmişiniz ve işlem detayları</p>
+        </div>
+        <div class="topbar-actions">
+          <button class="btn btn-ghost">Filtrele</button>
+          <button class="btn btn-primary">+ Yeni İşlem</button>
+        </div>
+      </div>
+
+      <section class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-label">Bu Ay İşlem</div>
+          <div class="stat-value">12</div>
+          <div class="stat-change positive">+4 geçen aya göre</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Toplam Alım</div>
+          <div class="stat-value">₺1.842.000</div>
+          <div class="stat-change positive">8 işlem</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Toplam Satım</div>
+          <div class="stat-value">₺428.500</div>
+          <div class="stat-change negative">4 işlem</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Net Akış</div>
+          <div class="stat-value">₺1.413.500</div>
+          <div class="stat-change positive">Alım ağırlıklı</div>
+        </div>
+      </section>
+
+      <section class="chart-card">
+        <div class="card-header">
+          <div>
+            <h3>İşlem Geçmişi</h3>
+            <p class="card-header-meta">Son 30 gün · Hasan Rain hesabı</p>
+          </div>
+          <div class="tabs">
+            <div class="tab active">Tümü</div>
+            <div class="tab">Alım</div>
+            <div class="tab">Satım</div>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Tarih</th>
+                <th>Varlık</th>
+                <th>Tür</th>
+                <th class="num">Miktar</th>
+                <th class="num">Birim Fiyat</th>
+                <th class="num">Toplam</th>
+                <th class="num">Komisyon</th>
+                <th>Durum</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>22 Haz 2026</td>
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon btc">BTC</div>
+                    <div class="asset-name"><strong>Bitcoin</strong><span>BTC</span></div>
+                  </div>
+                </td>
+                <td><span class="badge buy">Alım</span></td>
+                <td class="num">0,05 BTC</td>
+                <td class="num">₺3.980.000</td>
+                <td class="num">₺199.000</td>
+                <td class="num">₺298</td>
+                <td><span class="badge cash">Tamamlandı</span></td>
+              </tr>
+              <tr>
+                <td>18 Haz 2026</td>
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon gold">ALT</div>
+                    <div class="asset-name"><strong>Gram Altın</strong><span>995 ayar</span></div>
+                  </div>
+                </td>
+                <td><span class="badge buy">Alım</span></td>
+                <td class="num">10 gr</td>
+                <td class="num">₺4.240 / gr</td>
+                <td class="num">₺42.400</td>
+                <td class="num">₺0</td>
+                <td><span class="badge cash">Tamamlandı</span></td>
+              </tr>
+              <tr>
+                <td>14 Haz 2026</td>
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon eth">ETH</div>
+                    <div class="asset-name"><strong>Ethereum</strong><span>ETH</span></div>
+                  </div>
+                </td>
+                <td><span class="badge buy">Alım</span></td>
+                <td class="num">1,2 ETH</td>
+                <td class="num">₺142.500</td>
+                <td class="num">₺171.000</td>
+                <td class="num">₺256</td>
+                <td><span class="badge cash">Tamamlandı</span></td>
+              </tr>
+              <tr>
+                <td>08 Haz 2026</td>
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon bist">THY</div>
+                    <div class="asset-name"><strong>THYAO</strong><span>BIST</span></div>
+                  </div>
+                </td>
+                <td><span class="badge buy">Alım</span></td>
+                <td class="num">40 adet</td>
+                <td class="num">₺268,50</td>
+                <td class="num">₺10.740</td>
+                <td class="num">₺16</td>
+                <td><span class="badge cash">Tamamlandı</span></td>
+              </tr>
+              <tr>
+                <td>02 Haz 2026</td>
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon usd">USD</div>
+                    <div class="asset-name"><strong>Dolar</strong><span>USD/TRY</span></div>
+                  </div>
+                </td>
+                <td><span class="badge buy">Alım</span></td>
+                <td class="num">$800</td>
+                <td class="num">₺38,45</td>
+                <td class="num">₺30.760</td>
+                <td class="num">₺46</td>
+                <td><span class="badge cash">Tamamlandı</span></td>
+              </tr>
+              <tr>
+                <td>28 May 2026</td>
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon eth">ETH</div>
+                    <div class="asset-name"><strong>Ethereum</strong><span>ETH</span></div>
+                  </div>
+                </td>
+                <td><span class="badge sell">Satım</span></td>
+                <td class="num">0,5 ETH</td>
+                <td class="num">₺155.800</td>
+                <td class="num">₺77.900</td>
+                <td class="num">₺117</td>
+                <td><span class="badge cash">Tamamlandı</span></td>
+              </tr>
+              <tr>
+                <td>20 May 2026</td>
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon tl">TL</div>
+                    <div class="asset-name"><strong>Vadeli Mevduat</strong><span>32 gün</span></div>
+                  </div>
+                </td>
+                <td><span class="badge buy">Alım</span></td>
+                <td class="num">₺125.000</td>
+                <td class="num">—</td>
+                <td class="num">₺125.000</td>
+                <td class="num">₺0</td>
+                <td><span class="badge cash">Aktif</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
